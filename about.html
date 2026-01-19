@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About RPEP</title>
+<link rel="stylesheet" href="style.css">
+<script>
+function activateSection(id, element) {
+    document.querySelectorAll('.icon-item').forEach(item => item.classList.remove('active'));
+    element.classList.add('active');
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
+</script>
+</head>
+<body class="about-page">
+
+<!-- HEADER -->
+<header>
+    <div class="logo">
+        <span class="main-logo-text">RPEP</span>
+        <span class="subtitle-text">Radiology Pathway Experience Program</span>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programme.html">Program</a></li>
+            <li><a href="radiology.html">Radiology</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- MAIN ABOUT SECTION -->
+<main>
+<section class="about-section">
+    <div class="about-layout">
+
+        <!-- LEFT IMAGE -->
+        <div class="about-left">
+            <img src="icons/7.png" alt="Radiology Image">
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="about-right">
+            <h2>About RPEP</h2>
+            <p class="about-quote">
+                "The Radiology Pathway Experience Program prepares students for future careers in radiology 
+                through exposure, mentorship, and structured guidance."
+            </p>
+
+            <!-- ICONS ROW -->
+            <div class="about-icons">
+                <div class="icon-item active" onclick="activateSection('mission', this)">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="12" cy="12" r="10"/>
+                            <circle cx="12" cy="12" r="5"/>
+                            <circle cx="12" cy="12" r="1.5"/>
+                        </svg>
+                    </div>
+                    <span>Mission</span>
+                </div>
+                <div class="icon-item" onclick="activateSection('vision', this)">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/>
+                            <circle cx="12" cy="12" r="3"/>
+                        </svg>
+                    </div>
+                    <span>Vision</span>
+                </div>
+                <div class="icon-item" onclick="activateSection('values', this)">
+                    <div class="icon-circle">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 21s-7-4.5-9-8.5S5 3 12 8c7-5 11 1.5 9 9.5S12 21 12 21z"/>
+                        </svg>
+                    </div>
+                    <span>Values</span>
+                </div>
+            </div>
+
+            <!-- TEXT SECTIONS -->
+            <div class="about-text">
+                <h4 id="mission">Mission</h4>
+                <p>To provide aspiring medical students with comprehensive exposure to radiology as a career path, 
+                offering hands-on experience, mentorship, and structured guidance that bridges the gap 
+                between academic learning and professional practice.</p>
+
+                <h4 id="vision">Vision</h4>
+                <p>To become the leading pathway program in Oman that cultivates the next generation of skilled radiologists, 
+                increasing awareness and accessibility of radiology careers while contributing to the advancement 
+                of healthcare excellence in the region.</p>
+
+                <h4 id="values">Values</h4>
+                <p>We are committed to guidance through expert mentorship, professionalism in all interactions, 
+                equity in access to opportunities, continuous growth through learning, and excellence 
+                in preparing students for successful radiology careers.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-col info-col">
+            <div class="footer-logo">RPEP</div>
+            <p>Radiology Pathway Experience Program - Empowering the next generation of healthcare professionals.</p>
+            <p class="copyright-text">&copy; 2025 RPEP Medical Services</p>
+        </div>
+        <div class="footer-col links-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programme.html">Program</a></li>
+                <li><a href="radiology.html">Radiology</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </div>
+        <div class="footer-col contact-col">
+            <h3>Get In Touch</h3>
+            <a href="mailto:info@rpep.org" class="footer-cta-button">Contact Us</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

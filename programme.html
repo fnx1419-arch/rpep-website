@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Program</title>
+
+  <link rel="stylesheet" href="Style.css">
+  <script src="Script.js" defer></script>
+</head>
+
+<header>
+    <div class="logo">
+        <span class="main-logo-text">RPEP</span>
+        <span class="subtitle-text">Radiology Pathway Experience Program</span>
+    </div>
+    <nav class="navbar" aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="programme.html">Program</a></li>
+            <li><a href="radiology.html">Radiology</a></li>
+            <li><a href="community.html">Community</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+  <section class="program-tabs-section">
+    <div class="program-tabs-header">
+      <h1>Program Structure</h1>
+      <p>A structured pathway designed to build radiology expertise step by step.</p>
+    </div>
+
+    <div class="program-tabs-wrap">
+
+      <!-- Tabs Row -->
+      <div class="program-tabs" id="programTabs">
+
+        <!-- Foundation -->
+        <button class="program-tab active" data-tab="foundation" type="button">
+          <div class="tab-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M4 19.5V5a2 2 0 0 1 2-2h11a1 1 0 0 1 1 1v15" />
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H18" />
+            </svg>
+          </div>
+          <span>Foundation Phase</span>
+        </button>
+
+        <!-- Shadowing -->
+        <button class="program-tab" data-tab="shadowing" type="button">
+          <div class="tab-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 21h18" />
+              <path d="M5 21V7l7-4 7 4v14" />
+              <path d="M9 21v-6h6v6" />
+            </svg>
+          </div>
+          <span>Hospital Shadowing</span>
+        </button>
+
+        <!-- Workshops -->
+        <button class="program-tab" data-tab="workshops" type="button">
+          <div class="tab-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M14.7 6.3a4 4 0 1 0-5.4 5.4l8.4 8.4a2 2 0 0 0 2.8-2.8z"/>
+              <path d="M8 8l-5 5" />
+            </svg>
+          </div>
+          <span>Workshops &amp; Skills</span>
+        </button>
+
+        <!-- Advanced -->
+        <button class="program-tab" data-tab="advanced" type="button">
+          <div class="tab-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M6 2h12" />
+              <path d="M9 2v6l-5 9a5 5 0 0 0 4.5 7h7a5 5 0 0 0 4.5-7l-5-9V2" />
+            </svg>
+          </div>
+          <span>Advanced Exploration</span>
+        </button>
+
+      </div>
+
+      <!-- Details Panel (JS will replace this content on click) -->
+      <div class="program-details" id="programDetails">
+        <h2>Foundation Phase</h2>
+        <p>
+          Build strong fundamentals in radiology through structured resources, guided reading, and beginner-friendly
+          learning materials that prepare you for hospital exposure.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="program-schedule-panel" id="schedule">
+    <div class="schedule-wrap">
+      <h2>Program Schedule</h2>
+  
+      <div class="table-wrapper">
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th>Phase</th>
+              <th>Duration</th>
+              <th>Activities</th>
+              <th>Outcomes</th>
+            </tr>
+          </thead>
+  
+          <tbody>
+            <tr>
+              <td class="phase-cell">
+                <span class="phase-icon">
+                  <!-- book icon -->
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 19.5V5a2 2 0 0 1 2-2h11a1 1 0 0 1 1 1v15" />
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H18" />
+                  </svg>
+                </span>
+                <strong>Foundation Phase</strong>
+              </td>
+              <td>4 weeks</td>
+              <td>Introductory lectures, online modules, anatomy review</td>
+              <td>Core knowledge established</td>
+            </tr>
+  
+            <tr>
+              <td class="phase-cell">
+                <span class="phase-icon">
+                  <!-- building icon -->
+                  <svg viewBox="0 0 24 24">
+                    <path d="M3 21h18" />
+                    <path d="M5 21V7l7-4 7 4v14" />
+                    <path d="M9 21v-6h6v6" />
+                  </svg>
+                </span>
+                <strong>Hospital Shadowing</strong>
+              </td>
+              <td>6 weeks</td>
+              <td>Clinical observation, department rotations, case discussions</td>
+              <td>Clinical exposure gained</td>
+            </tr>
+  
+            <tr>
+              <td class="phase-cell">
+                <span class="phase-icon">
+                  <!-- tool icon -->
+                  <svg viewBox="0 0 24 24">
+                    <path d="M14.7 6.3a4 4 0 1 0-5.4 5.4l8.4 8.4a2 2 0 0 0 2.8-2.8z"/>
+                    <path d="M8 8l-5 5" />
+                  </svg>
+                </span>
+                <strong>Workshops &amp; Skills</strong>
+              </td>
+              <td>5 weeks</td>
+              <td>Hands-on workshops, image interpretation, case studies</td>
+              <td>Practical skills developed</td>
+            </tr>
+  
+            <tr>
+              <td class="phase-cell">
+                <span class="phase-icon">
+                  <!-- flask icon -->
+                  <svg viewBox="0 0 24 24">
+                    <path d="M6 2h12" />
+                    <path d="M9 2v6l-5 9a5 5 0 0 0 4.5 7h7a5 5 0 0 0 4.5-7l-5-9V2" />
+                  </svg>
+                </span>
+                <strong>Advanced Exploration</strong>
+              </td>
+              <td>5 weeks</td>
+              <td>Subspecialty exposure, research projects, mentorship</td>
+              <td>Career pathway defined</td>
+            </tr>
+  
+            <tr class="total-row">
+              <td><strong>Total Duration</strong></td>
+              <td colspan="3"><strong>20 weeks (5 months)</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+    </div>
+  </section>
+  
+  <footer>
+    <div class="footer-content">
+        <div class="footer-col info-col">
+            <div class="footer-logo">RPEP</div>
+            <p>Radiology Pathway Experience Program - Empowering the next generation of healthcare professionals.</p>
+            <p class="copyright-text">&copy; 2025 RPEP Medical Services</p>
+        </div>
+
+        <div class="footer-col links-col">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programme.html">Program</a></li>
+                <li><a href="radiology.html">Radiology</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col contact-col">
+            <h3>Get In Touch</h3>
+            <a href="mailto:info@rpep.org" class="footer-cta-button">Contact Us</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
